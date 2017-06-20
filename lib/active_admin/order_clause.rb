@@ -33,7 +33,7 @@ module ActiveAdmin
     end
 
     def sql
-      custom_sql || to_sql
+      custom_sql || to_sql @active_admin_config
     end
 
     protected
