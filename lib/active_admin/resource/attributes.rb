@@ -32,7 +32,7 @@ module ActiveAdmin
       end
 
       def sti_col?(c)
-        c.name == resource_class.types
+        c.name == resource_class._types
       end
 
       def counter_cache_col?(c)
