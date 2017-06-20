@@ -32,7 +32,7 @@ module ActiveAdmin
       end
 
       def sti_col?(c)
-        c.name == resource_class.inheritance_column
+        c.name == resource_class.types
       end
 
       def counter_cache_col?(c)
